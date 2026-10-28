@@ -438,7 +438,8 @@ Item {
               Text {
                 textFormat: Text.PlainText
                 id: stamp
-                anchors.centerIn: parent
+                anchors.right: parent.right
+                anchors.verticalCenter: parent.verticalCenter
                 text: card.ago()
                 color: card.dimColor
                 opacity: card.hovered ? 0 : 1
